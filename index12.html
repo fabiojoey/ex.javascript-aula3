@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arrays com nomes dos meses do ano:
+        var mes = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+
+        var hoje = new Date (); // Data e hora atuais
+        var novadata = new Date(2018,02,02); // atribuindo data
+        var milissegundo = new Date(1488569383588); // Milessegundos desde 01/01/70
+        var dataDeString = new Date("2018/02/02"); // passando para string
+        // Invocando o objeto Date como uma função (sem operador new)
+
+        document.write("Data : ", Date(), "<br/>");
+        document.write("Data em milissegundos: ", Date.now(), "<br/><br/>");
+    </script>
+    
+</body>
+</html>

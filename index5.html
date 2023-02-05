@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Corrente </title>
+</head>
+<body>
+    <script>
+        function valorReferencia(strVar, arrVar)
+        {
+            strVar = "String Modificadas";
+            arrVar[0] = "Array Modificado";
+        }
+        var texto = "Valor Original";
+        var vetor = ["Valor Original"];
+        document.write("String antes de chamar a função: " + texto + "<br/>");
+        document.write("Array antes de chamar a função: " + vetor[0] + "<br/>");
+        // chamando a função:
+        valorReferencia(texto, vetor);
+        document.write("String após de chamar a função: " + texto + "<br/>");
+        document.write("Array após de chamar a função: " + vetor[0] + "<br/>");
+
+    </script>
+    
+</body>
+</html>
